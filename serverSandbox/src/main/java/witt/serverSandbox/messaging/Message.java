@@ -1,17 +1,31 @@
 package witt.serverSandbox.messaging;
 
+import com.fasterxml.jackson.databind.util.JSONPObject;
+
 public class Message {
-    String name;
+    String content;
+    String sender;
 
-    public Message(String name) {
-        this.name = name;
+    public Message(String content, String sender) {
+        this.content = content;
+        this.sender = sender;
     }
 
-    public String getName() {
-        return name;
+    public String getContent() {
+        return content;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setContent(String content) {
+        this.content = content;
     }
+
+    public String getSender() {
+        return sender;
+    }
+
+    public void setSender(String sender) {
+        this.sender = sender;
+    }
+
+
 }
